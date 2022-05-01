@@ -20,12 +20,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     result+= +nStr[i]
   }
   if(result > 9){
-    let resultTwo = 0
-    let resultStr = result.toString()
-    for (let i = 0; i < resultStr.length; i++) {
-      resultTwo += +resultStr[i]
-    }
-    return resultTwo
+    return getSumOfDigits(result)
   } else {
     return result
   }
